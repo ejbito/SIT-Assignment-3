@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/recipes.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <title>Workouts</title>
+</head>
+<body>
+    <!--Navigation bar -->
+    <header class="header">
+        <a class="logo" href="index.html"><span>Gym Start</span></a>
+        <nav class="navbar">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="workouts.html" class="nav-link">Workouts</a>
+            <a href="recipes.html" class="nav-link">Recipes</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#">|</a>
+            <a href="signup.html" class="btn">Sign Up</a>
+        </nav>
+    </header>
+
+    <div id="recipes">
+            <div class="category-nav">
+                <label>
+                    <input class="btn" type="radio" v-model="recipes" value=""> All
+                </label>
+                <label>
+                    <input class="btn" type="radio" v-model="recipes" value="Breakfast"> Breakfast
+                </label>
+                <label>
+                    <input class="btn" type="radio" v-model="recipes" value="Lunch"> Lunch
+                </label>
+                <label>
+                    <input class="btn" type="radio" v-model="recipes" value="Dinner"> Dinner
+                </label>
+                <br>
+                <br>
+                <br>
+                <span>Selected category: {{ recipes }}</span>
+            </div>      
+        <transition-group appear tag="ul" class="category-list">
+          <a v-for="image in filterByCategory" :key="image.index">
+              <img :src="image.src" alt="">
+          </a>
+        </transition-group>
+
+    </div>
+</body>
+
+<script src="js/recipes.js"></script>
+
+</html>

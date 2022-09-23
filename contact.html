@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <!--Navigation bar -->
+    <header class="header">
+        <a class="logo" href="index.html"><span>Gym Start</span></a>
+        <nav class="navbar">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="workouts.html" class="nav-link">Workouts</a>
+            <a href="recipes.html" class="nav-link">Recipes</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#">|</a>
+            <a href="signup.html" class="btn">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="signup-form">
+            <h2>Contact</h2> <br>
+            <form class="form-group">
+                <div class="email-field">
+                    <label for="name">Full Name:</label>
+                    <input v-model="signup" type="email" placeholder="Full name..." class="input-box" required>
+                </div>
+                
+                <br>
+
+                <span> Selected: </span>
+
+                <select v-model="selected">
+                  <option disabled value="">Please select one</option>
+                  <option>Workouts</option>
+                  <option>Recipes</option>
+                  <option>Other...</option>
+                </select>
+                
+                <br>
+
+                <div class="message">
+                    <label for="message">Message</label>
+                    <input v-model="signup" type="message" placeholder="Message..." class="input-box" required>
+                </div>
+                    
+                <div class="btn-div">
+                    <input type="submit" class="btn" @click="signup">
+                </div>
+            </form>
+        </div>
+     </div>
+</body>
+
+<script src="js/signup.js"></script>
+
+
+</html>

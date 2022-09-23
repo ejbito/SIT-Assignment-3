@@ -1,0 +1,81 @@
+:root {
+    --light: #ffffff;
+    --blue: #68e1fd;
+    --violet: #5e50ff;
+    --purple: #0e0c27;
+    font-family: Calibri;
+  }
+
+.main-container {
+    padding: 200px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 20%;
+}
+
+/* Registration form style */
+.signup-form {
+    background: var(--violet);
+    color: var(--light);
+    font-size: 20px;
+    border-radius: 15px;
+    /* width: 90%; */
+    height: 600px;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.signup-form p {
+    font-size: 25px;
+}
+
+/* Button */
+.main-container .btn-div{
+    padding: 25px 0;
+}
+
+.main-container .btn{
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin: auto;
+    display: block;
+}
+  
+.main-container .btn:hover{
+    background-color: var(--blue);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin: auto;
+    display: block;
+}
+
+.main-container .signup-form .input-box{
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.main-container .signup-form .login-btn p{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

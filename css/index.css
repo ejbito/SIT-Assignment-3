@@ -1,0 +1,78 @@
+:root {
+    --light: #ffffff;
+    --blue: #68e1fd;
+    --violet: #5e50ff;
+    --purple: #0e0c27;
+    font-family: Calibri;
+  }
+
+/* Home Section */
+section{
+    padding: 50px 0 50px 0;
+}
+
+.home{
+    max-width: 70%;
+    padding: 100px 80px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+.home .home-content{
+    width: 60%;
+    padding: 2rem;
+}
+  
+.home h3{
+    color: var(--purple);
+    margin-top: 6rem;
+    font-size: 5rem;
+}
+  
+.home p{
+    color: var(--violet);
+    padding: 10px;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+  
+.home .home-image{
+    width: 30%;
+}
+  
+.home .home-image img{
+    padding-top: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+  /* Button */
+.home .home-content .btn{
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--violet);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+  
+.home .home-content .btn:hover{
+    background: var(--blue);
+    background-color: var(--blue);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px){
+    .home .home-image{
+        width: 10%;
+    }
+
+    .home .home-image img{
+        opacity: 0;
+    }
+}
